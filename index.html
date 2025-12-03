@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="titlegen.css">
+    <script src="titlegen.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Aqua's YouTube Title Generator</h1>
+
+        <div class="menu">
+            <div class="menu-intro">Choose a game:</div>
+            <div class="game-buttons">
+                <button class="game-btn" data-game="rocket-league">Rocket League</button>
+                <button class="game-btn" data-game="valorant">Valorant</button>
+                <button class="game-btn" data-game="yomi-hustle">Yomi Hustle</button>
+                <button id="yomi-tutorial-toggle" class="sub-btn" data-game="yomi-hustle" title="Yomi Tutorials">Tutorials</button>
+                <button class="game-btn" data-game="deltarune">Deltarune</button>
+                <button class="game-btn" data-game="undertale">Undertale</button>
+                <button class="game-btn" data-game="hypixel">Hypixel</button>
+                <button class="game-btn" data-game="skyblock">Skyblock</button>
+                <button class="game-btn" data-game="skywars">SkyWars</button>
+                <button class="game-btn" data-game="bedwars">BedWars</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="generate" class="gen primary">Generate Title</button>
+            <button id="copy" class="gen">Copy</button>
+        </div>
+
+        <div id="titleOutput" tabindex="0" aria-live="polite"></div>
+        <div id="titleDesc" aria-live="polite" class="title-desc"></div>
+
+        <div class="hint">Tip: Click a tutorial to populate the title and see a short description.</div>
+    </div>
+</body>
+</html>
